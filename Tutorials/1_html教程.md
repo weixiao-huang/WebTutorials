@@ -104,7 +104,7 @@
 其他的知识，还有其他的例如button，或者input什么的，用的时候自行百度或者Google即可以得知用法。Html5支持很多特性，限于时间有限，就不给大家详细介绍了
 
 ## Sublime Text显神通
-打开Sublime Text 3，在最上面的菜单栏中选择`View > Show`，然后下方出现命令窗口，将下述代码复制进去（记住一定要是Sublime Text 3而不是2）
+打开Sublime Text 3，在最上面的菜单栏中选择`View > Show Console`，然后下方出现命令窗口，将下述代码复制进去（记住一定要是Sublime Text 3而不是2）
 ```python
 import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
 ```
