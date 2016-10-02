@@ -1,0 +1,13 @@
+.title {
+  color: gray;
+}
+.para {
+  color: #563d7c;
+  background-color: #eee
+}
+#block {
+  color: #75b;
+  margin: 50px 60px;
+  padding: 96px 50px;
+  background-color: #aaa;
+}
