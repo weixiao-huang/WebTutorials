@@ -29,11 +29,11 @@
 </html>
 ```
 重新打开网站，你会发现，出现了乱码。这是因为我们没有指定文件的编码，网页文件利用了默认的编码来执行，而此编码不能很好的展现中文，因此我们必须指定编码，在`<head>`和`</head>`中间添加
-```
+```html
 <meta charset="utf-8">
 ```
 完整代码如下
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -93,7 +93,7 @@
 
 ## HTML5相关知识以及其他额外知识
 加入了更详细的块
-```
+```html
 <header></header>
 <footer></footer>
 <main></main>
@@ -105,7 +105,7 @@
 
 ## Sublime Text显神通
 打开Sublime Text 3，在最上面的菜单栏中选择`View > Show`，然后下方出现命令窗口，将下述代码复制进去（记住一定要是Sublime Text 3而不是2）
-```
+```python
 import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
 ```
 等待安装，片刻之后，重启Sublime，然后按`ctrl+shift+p`，可以看到跳出一个窗口，接着输入`install`，按`Enter`确定，然后又跳出一个窗口，输入`html`，点击`Enter`，便可以安装Sublime Text 3的html插件，让大家更爽的写html.

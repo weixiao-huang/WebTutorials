@@ -106,4 +106,3 @@ html中，我们看到很多DOM都有属性(Property)，这些属性可以作为
 - hover伪选择器
 - inline, block
 - position, float
-- 
